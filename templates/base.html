@@ -1,0 +1,19 @@
+{% extends 'bootstrap/base.html'%}
+{% block head%}
+    {{ super() }}
+    <title>
+        {% block title %} Biblioteca web App
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="../static/style/style.css"> 
+{% endblock %}
+{% block body %}
+    {% block navbar %}
+        {%include 'navbar.html' %}
+    {% endblock %}
+
+    {% block content %}
+         <img src="../static/assets/portada.jpg.jpg" alt="Libro de textos">
+    {% endblock %}
+
+{% endblock %}
